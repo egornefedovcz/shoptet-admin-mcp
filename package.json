@@ -1,0 +1,50 @@
+{
+  "name": "shoptet-admin-mcp",
+  "version": "0.1.0",
+  "description": "Unofficial MCP server that drives the Shoptet admin with Playwright. Read-only by default, guarded writes.",
+  "type": "module",
+  "bin": {
+    "shoptet-admin-mcp": "src/server.js"
+  },
+  "main": "src/server.js",
+  "files": [
+    "src",
+    "skills",
+    "docs",
+    "README.md",
+    "README.cs.md",
+    "SECURITY.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "keywords": [
+    "shoptet",
+    "mcp",
+    "model-context-protocol",
+    "playwright",
+    "claude",
+    "eshop"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "playwright": "1.59.1",
+    "zod": "4.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egornefedovcz/shoptet-admin-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/egornefedovcz/shoptet-admin-mcp/issues"
+  },
+  "homepage": "https://github.com/egornefedovcz/shoptet-admin-mcp#readme",
+  "author": "Egor Nefedov (https://nefedov.cz)"
+}
